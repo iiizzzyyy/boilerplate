@@ -1,0 +1,13 @@
+# --- DOC INGEST ---
+use context7 mcp
+→ docs HubSpot API (NodeJS v10+ examples)
+→ docs HubSpot MCP server
+→ docs DrChrono REST API (appointments, patients, webhooks, bulk endpoints)
+→ docs Linear GraphQL mutation for creating issues & sub-issues
+
+Next, read local scope files for extra requirements:
+  • /Users/izzy.aly/Documents/hubspot-biolerplate/SCOPE.md
+  • /Users/izzy.aly/Documents/hubspot-biolerplate/scope.txt
+
+Extract key functional specs, constraints, auth details, and save as DESIGN_CONTEXT.
+Reply “docs loaded” when done.
