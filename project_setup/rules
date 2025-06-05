@@ -1,0 +1,143 @@
+# 🏥 Oro HubSpot-Dr.Crono Integration - Project Rules
+
+## 🔐 Healthcare Compliance & Security
+
+- **HIPAA Compliance Framework**:
+  - All patient data handling must include audit trails and encryption
+  - Implement role-based access controls for sensitive medical information
+  - Document data flow and storage patterns for compliance reviews
+  - Ensure all API communications use TLS 1.2+ encryption
+
+- **Patient Data Privacy**:
+  - Separate marketing communications from transactional medical communications
+  - Implement opt-out handling that preserves critical medical notifications
+  - Store consent forms with verifiable e-signature integration (DocuSign + HubSpot)
+  - Maintain data retention policies aligned with medical record requirements
+
+## 🔌 External System Integration
+
+- **HubSpot Integration Guidelines**:
+  - Use HubSpot MCP for API documentation and endpoint management
+  - Implement webhook validation for form submissions and patient updates
+  - Distinguish between marketing and transactional email workflows
+  - Create custom properties for medical workflow stages
+
+- **Dr. Crono API Management**:
+  - Account for API maturity limitations (1-year-old API)
+  - Implement robust error handling for limited functionality areas
+  - Design fallback manual processes during API unavailability
+  - Monitor API rate limits and implement appropriate throttling
+
+- **AWS Serverless Architecture**:
+  - Use Lambda functions for event-driven patient data processing
+  - Implement EventBridge for cross-system workflow orchestration
+  - Design API Gateway with proper authentication and rate limiting
+  - Include dead letter queues for failed patient data synchronization
+
+## 📋 Medical Workflow Automation
+
+- **Patient Journey Tracking**:
+  - Map patient stages: Lead → Consent → Scheduling → Treatment → Follow-up
+  - Implement real-time status synchronization between systems
+  - Create automated reminder workflows for incomplete onboarding steps
+  - Track consent form completion with compliance timestamps
+
+- **Data Synchronization Rules**:
+  - Sync patient profiles within 30-minute intervals (excluding credit card data)
+  - Validate critical fields (DOB, contact info) with consistent formatting
+  - Flag and resolve duplicate patient records across systems
+  - Maintain data integrity during manual-to-automated workflow transitions
+
+## 🧪 Healthcare-Specific Testing
+
+- **Integration Testing Focus**:
+  - Validate patient data flow accuracy between HubSpot and Dr. Crono
+  - Test consent form capture and e-signature workflow completion
+  - Verify appointment scheduling automation and conflict resolution
+  - Validate HIPAA compliance in data transmission and storage
+
+- **User Acceptance Testing**:
+  - Test medical staff workflows for patient onboarding efficiency
+  - Validate patient experience through form submission and scheduling
+  - Test marketing vs. transactional email differentiation
+  - Verify compliance officer access to audit trails and reports
+
+## 📊 Medical Practice Reporting
+
+- **Dashboard Requirements**:
+  - Patient journey pipeline from lead to treatment completion
+  - Consent form completion rates and compliance tracking
+  - Appointment booking trends and no-show analytics
+  - Revenue tracking from patient conversions
+
+- **Compliance Reporting**:
+  - Audit trail documentation for patient data access
+  - Consent form completion and e-signature verification
+  - Communication opt-out status and transactional email delivery
+  - Data retention and deletion compliance reports
+
+## 🚀 Deployment & Go-Live Strategy
+
+- **Phased Implementation**:
+  - Phase 1: Core data synchronization (Weeks 1-5)
+  - Phase 2: Automated workflows and communication (Weeks 6-7)
+  - Phase 3: Reporting and compliance features (Weeks 8-9)
+  - Phase 4: Production deployment and monitoring (Week 10)
+
+- **Rollback Planning**:
+  - Maintain manual workflow capabilities during transition
+  - Implement feature flags for gradual automation enablement
+  - Create data backup procedures for patient information
+  - Document rollback procedures for each integration component
+
+## 📚 Documentation & Training
+
+- **Medical Staff Training Materials**:
+  - Patient onboarding workflow changes and new automation
+  - Consent form management and e-signature processes
+  - Dashboard usage for patient pipeline monitoring
+  - Escalation procedures for integration failures
+
+- **Compliance Documentation**:
+  - Data flow diagrams for audit purposes
+  - Privacy impact assessments for patient data handling
+  - API security configuration and access control documentation
+  - Incident response procedures for data breaches or system failures
+
+## 🔄 Maintenance & Support
+
+- **Ongoing Monitoring**:
+  - Patient data synchronization accuracy and timing
+  - API performance and error rates for HubSpot and Dr. Crono
+  - Consent form completion rates and e-signature failures
+  - Medical workflow automation success metrics
+
+- **Version Management**:
+  - Track Dr. Crono API updates and compatibility requirements
+  - Monitor HubSpot feature changes affecting medical workflows
+  - Plan for AWS service updates and serverless function maintenance
+  - Document integration changes for compliance audit trails
+
+---
+
+## 📋 Linear Task Management - Medical Integration Focus
+
+- **Task Categories**:
+  - **HIPAA**: Compliance and security implementation tasks
+  - **Integration**: HubSpot-Dr.Crono data flow and API tasks
+  - **Workflow**: Patient journey automation and business process tasks
+  - **Testing**: Medical workflow validation and compliance testing tasks
+
+- **Medical Workflow Task Templates**:
+  ```markdown
+  ## Patient Data Sync Task
+  - Medical workflow impact: [How this affects patient care]
+  - Compliance requirements: [HIPAA/regulatory considerations]
+  - Integration dependencies: [HubSpot/Dr.Crono API requirements]
+  - Testing criteria: [Medical staff validation needs]
+  - Rollback plan: [Manual process fallback]
+  ```
+
+---
+
+*Note: All healthcare data handling must maintain HIPAA compliance. Patient privacy and medical workflow efficiency are primary considerations for all development decisions.*
