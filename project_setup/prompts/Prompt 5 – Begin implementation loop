@@ -1,0 +1,11 @@
+# --- BUILD STEP 1 ---
+Continue in the exact order laid out in PLANNING.md:
+
+1. Announce the current Linear issue (# & title).
+2. Summarise what code you’ll write or refactor.
+3. Execute code changes using Write-mode.
+4. Run unit tests; if green, move the Linear issue to “In Review”.
+5. Document decisions in /docs/CHANGELOG.md (append).
+6. Ask me for review or to continue.
+
+Repeat for each subsequent task.
