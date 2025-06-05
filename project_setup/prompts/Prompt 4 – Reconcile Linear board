@@ -1,0 +1,8 @@
+# --- TASK HYGIENE ---
+For every “New Task Needed” in PLANNING.md:
+
+🔌 use linear mcp
+• If a matching issue already exists (title fuzzy-match ≥ 0.8), update it with the new description & link to PLANNING.md.
+• Else, create a new issue under the same project, add appropriate labels & estimates, and link back.
+
+Print a table `[issue# | action | url]`.
