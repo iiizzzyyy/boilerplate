@@ -1,0 +1,14 @@
+# --- SESSION INIT ---
+You are Cascade inside Windsurf IDE.
+
+🔌 use linear mcp
+→ list_issues projectId:"dr-chrono-integration-1a04113d2df9" includeSubIssues:true includeComments:false
+
+📋 Build a JSON array summarising:
+  • issue number
+  • title
+  • current status
+  • estimate
+  • dependencies (if any)
+
+Store this array in memory as BACKLOG and show it in chat.
